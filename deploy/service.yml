@@ -6,6 +6,6 @@ metadata:
     run: frontend
 spec:
   ports:
-    - port: 8000
+    - port: 8100
   selector:
     run: frontend
