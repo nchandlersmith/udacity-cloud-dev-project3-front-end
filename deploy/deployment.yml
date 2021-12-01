@@ -16,4 +16,4 @@ spec:
     spec:
       containers:
         - name: udagram-frontend
-          image: nchandlersmith/udagram-frontend
+          image: nchandlersmith/frontend
