@@ -33,6 +33,7 @@ export class ApiService {
   }
 
   get(endpoint): Promise<any> {
+    console.log(`API_HOST: ${API_HOST}`);
     const url = `${API_HOST}${endpoint}`;
     const req = this.http.get(url, this.httpOptions).pipe(map(ApiService.extractData));
 
@@ -45,6 +46,7 @@ export class ApiService {
   }
 
   post(endpoint, data): Promise<any> {
+    console.log(`API_HOST: ${API_HOST}`);
     const url = `${API_HOST}${endpoint}`;
     return this.http.post<HttpEvent<any>>(url, data, this.httpOptions)
             .toPromise()
