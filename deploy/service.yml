@@ -8,4 +8,4 @@ spec:
   ports:
     - port: 8100
   selector:
-    run: frontend
+    run: udagram

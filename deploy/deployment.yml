@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: frontend
   labels:
-    app: frontend
+    app: udagram
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: udagram
   template:
     metadata:
       labels:
-        app: frontend
+        app: udagram
     spec:
       containers:
         - name: udagram-frontend
-          image: nchandlersmith/frontend
+          image: nchandlersmith/frontend:latest
