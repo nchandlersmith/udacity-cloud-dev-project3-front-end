@@ -6,6 +6,6 @@ metadata:
     run: frontend
 spec:
   ports:
-    - port: 8100
+    - port: 8000
   selector:
     run: udagram
