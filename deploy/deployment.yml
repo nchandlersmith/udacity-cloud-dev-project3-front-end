@@ -17,3 +17,5 @@ spec:
       containers:
         - name: udagram-frontend
           image: nchandlersmith/frontend:latest
+          ports:
+            - containerPort: 8100
